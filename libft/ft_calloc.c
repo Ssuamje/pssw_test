@@ -17,8 +17,6 @@ void	*ft_calloc(size_t count, size_t size)
 {
 	unsigned char	*dest;
 
-	if (size && count > SIZE_MAX / size)
-		return (0);
 	dest = malloc(count * size);
 	if (dest == NULL)
 		return (NULL);
