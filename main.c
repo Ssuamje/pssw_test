@@ -44,8 +44,6 @@ int	main(int ac, char **av)
 
 	if (ac == 1)
 		exit(EXIT_SUCCESS);
-	if (ac > ARG_MAX)
-		error_exit(ERR_ARGUMENT_COUNTS);
 	a = set_deque(ac, av);
 	b = init_deque();
 	cmd = init_deque();
